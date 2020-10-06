@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const Add = async (startTime: string, endTime: string, system: string) => {
+const Add = async (startTime: string, endTime: string, system: string): Promise<string> => {
     const sTime: Date = new Date(startTime);
     const eTime: Date = new Date(endTime)
     let hours: number;
